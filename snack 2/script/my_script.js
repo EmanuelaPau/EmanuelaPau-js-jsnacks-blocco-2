@@ -2,13 +2,14 @@
 // Ogni volta che sbaglia stampiamo in console un messaggio che gli/le dice se il numero da indovinare è maggiore o minore.
 // Una volta che ha indovinato, stampiamo in console il numero di tentativi totali.
 
-let MyRandomNumber = Math.floor(Math.random() * 100);
+let MyRandomNumber = Math.floor(Math.random() * 100 + 1);
 console.log(MyRandomNumber);
 
 let yourGuess;
 let yourTry = 0
 
 while (MyRandomNumber !== yourGuess) {
+
     yourGuess = parseInt(prompt('guess the number'));
     if (yourGuess < MyRandomNumber) {
         console.log("il numero che hai messo è minore di quello che devi indovinare");
