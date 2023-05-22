@@ -6,8 +6,9 @@ let MyRandomNumber = Math.floor(Math.random() * 100 + 1);
 console.log(MyRandomNumber);
 
 let yourGuess;
-let yourTry = 0
+let tryCounter = 0
 
+let Guessed = false;
 while (MyRandomNumber !== yourGuess) {
 
     yourGuess = parseInt(prompt('guess the number'));
@@ -16,8 +17,8 @@ while (MyRandomNumber !== yourGuess) {
     } else if (yourGuess > MyRandomNumber) {
         console.log("il numero che hai messo è maggiore di quello che devi indovinare");
     }
-
-    yourTry = yourTry + 1;
+    let Guessed = true;
+    tryCounter = tryCounter + 1;
 }
 
-console.log(`bravo, hai indovinato in ${yourTry} tentativi`);
+console.log(`bravo, hai indovinato in ${tryCounter} tentativi`);
