@@ -23,12 +23,8 @@ if (areSameLength(parolaUno, parolaDue)) {
  */
 
 function areSameLength(firstWord, secondWord) {
-    const firstWordLenght = firstWord.lenght;
-    console.log(firstWordLenght);
-    const secondWordLenght = secondWord.lenght;
-    console.log(secondWordLenght);
-
-    if (firstWordLenght === secondWordLenght) {
+    if (firstWord.lenght === secondWord.lenght) {
         return true;
-    } return false;
+    }
+    return false;
 }
