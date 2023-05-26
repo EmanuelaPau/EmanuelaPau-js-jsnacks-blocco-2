@@ -13,12 +13,11 @@ mySubimitListButton.addEventListener('click', function () {
     const myInputValue = myInput.value;
     myIngredientsList.push(myInputValue);
     console.log(myIngredientsList);
+    myUlElement.innerHTML += `
+    <li>
+        ${myInputValue} 
+    </li>
+    `;
+    myInput.value = '';
 
-    for (let i = 0; i < myIngredientsList.length; i++) {
-        myUlElement.innerHTML = `
-        <li>
-            ${myIngredientsList[i]} 
-        </li>
-        `;
-    }
 }); 
