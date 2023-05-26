@@ -18,9 +18,9 @@ function createElementLi() {
 
 for (let i = 0; i < 10; i++) {
     const actualLi = createElementLi();
-    listUl.appendChild('actualLi');
+    const newLi = listUl.appendChild(actualLi);
 
-    const textList = [ciao, ciaone, pippo, pippa, claudio, claudia, pipa, pierina, pierino, mini]
-    liElement.innerHTML(textList[i])
+    const textList = ['ciao', 'ciaone', 'pippo', 'pippa', 'claudio', 'claudia', 'pipa', 'pierina', 'pierino', 'mini'];
+    newLi.innerHTML(textList[i]);
 }
 
