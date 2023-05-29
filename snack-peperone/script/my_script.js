@@ -28,7 +28,7 @@ console.log('hello snack');
 // Bonus:
 // crea un peperone con una funzione
 
-let variety = [lungo, tondo, rosso, verde, giallo];
+let variety = ['lungo', 'tondo', 'rosso', 'verde', 'giallo'];
 
 function randomNumber(minNumber, maxNumber) {
     let myRandomNumber = Math.floor(Math.random() * (maxNumber - minNumber + 1)) + minNumber;
@@ -36,79 +36,27 @@ function randomNumber(minNumber, maxNumber) {
 }
 
 function myPeperone(varietyArray) {
-    let myPeperoni {
-
+    let myPeperoni = {
     };
 
     let varietyRandomNumber = randomNumber(0, varietyArray.lenght);
     let myVariety = varietyArray[varietyRandomNumber];
-    myPeperoni[variety] = myVariety;
+    myPeperoni['variety'] = myVariety;
 
     let randomWeight = randomNumber(50, 300);
     let myWeight = `${randomWeight}gr`;
-    myPeperoni[weight] = myWeight;
+    myPeperoni['weight'] = myWeight;
+
+    let randomLength = randomNumber(2, 20);
+    let myLenght = `${randomLength}cm`;
+    myPeperoni['lenght'] = myLenght;
 
     return myPeperoni;
 }
 
+console.log(myPeperone(variety));
+
+
 let myPeperoni = [
-    {
-        variety: "red",
-        weight: "100gr",
-        lenght: "10cm"
-    },
 
-    {
-        variety: "red",
-        weight: "100gr",
-        lenght: "10cm"
-    },
-
-    {
-        variety: "red",
-        weight: "100gr",
-        lenght: "10cm"
-    },
-
-    {
-        variety: "red",
-        weight: "100gr",
-        lenght: "10cm"
-    },
-
-    {
-        variety: "red",
-        weight: "100gr",
-        lenght: "10cm"
-    }
-
-    {
-        variety: "red",
-        weight: "100gr",
-        lenght: "10cm"
-    },
-
-    {
-        variety: "red",
-        weight: "100gr",
-        lenght: "10cm"
-    },
-
-    {
-        variety: "red",
-        weight: "100gr",
-        lenght: "10cm"
-    },
-
-    {
-        variety: "red",
-        weight: "100gr",
-        lenght: "10cm"
-    },
-
-    {
-        variety: "red",
-        weight: "100gr",
-        lenght: "10cm"
-    }
 ]
