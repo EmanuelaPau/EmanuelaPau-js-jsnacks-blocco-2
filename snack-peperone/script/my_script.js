@@ -57,6 +57,10 @@ function myPeperone(varietyArray) {
 console.log(myPeperone(variety));
 
 
-let myPeperoni = [
+let myPeperoni = []
 
-]
+for (let i = 0; i < 10; i++) {
+    myPeperoni.push(myPeperone(variety));
+}
+
+console.log(myPeperoni);
