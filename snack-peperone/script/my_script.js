@@ -39,7 +39,7 @@ function myPeperone(varietyArray) {
     let myPeperoni = {
     };
 
-    let varietyRandomNumber = randomNumber(0, varietyArray.lenght);
+    let varietyRandomNumber = randomNumber(0, varietyArray.lenght - 1);
     let myVariety = varietyArray[varietyRandomNumber];
     myPeperoni['variety'] = myVariety;
 
