@@ -104,26 +104,33 @@ let carsList = [
 ]
 
 console.log(carsList.length);
+
+let autoBenzina = [];
+let autoDiesel = [];
+let otherCars = [];
+
 console.log('AUTO A BENZINA');
 for (let i = 0; i < carsList.length; i++) {
 
     let myObject = carsList[i];
     // console.log(myObject);
 
-    if (myObject.alimentazione = 'benzina') {
+    if (myObject.alimentazione === 'benzina') {
         console.log(myObject);
+        autoBenzina.push(myObject);
     }
 }
 console.log('-------');
 
 carsList.forEach(element => {
 
-    if (element.alimentazione = 'diesel') {
+    if (element.alimentazione === 'diesel') {
         console.log(element);
+        autoDiesel.push(element);
     }
 })
 
 console.log('-------');
 
-const result = carsList.filter(element => element.alimentazione != 'diesel' || 'benzina');
-console.log(result)
+otherCars = carsList.filter(element => element.alimentazione !== 'diesel' && element.alimentazione !== 'benzina');
+console.log(otherCars)
