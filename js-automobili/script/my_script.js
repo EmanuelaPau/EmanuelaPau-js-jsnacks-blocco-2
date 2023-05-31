@@ -133,4 +133,4 @@ carsList.forEach(element => {
 console.log('-------');
 
 otherCars = carsList.filter(element => element.alimentazione !== 'diesel' && element.alimentazione !== 'benzina');
-console.log(otherCars)
+console.log(otherCars);
