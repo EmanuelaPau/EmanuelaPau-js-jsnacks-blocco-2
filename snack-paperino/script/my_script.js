@@ -16,11 +16,13 @@ console.log(animals);
 // const myAnimalsFirstLetterUppercase = [...animals];
 // console.log(animalsFirstLetterUppercase);
 
-let allAnimals = " ...animals";
+// let allAnimals = " ...animals";
 
-function animalsFirstLetterUppercase(allAnimals) {
-    allAnimals = allAnimals.toLowerCase();
-    allAnimals = allAnimals.charAt(0).toUpperCase();
-    return allAnimals;
-}
-console.log(animalsFirstLetterUppercase(allAnimals));
+let myAnimalsFirstLetterUppercase = [];
+
+animals.forEach((word) => {
+    const newString = word.charAt(0).toUpperCase() + word.substring(1).toLowerCase();
+    myAnimalsFirstLetterUppercase.push(newString);
+})
+
+console.log(myAnimalsFirstLetterUppercase);
